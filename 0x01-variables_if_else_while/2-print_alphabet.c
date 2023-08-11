@@ -9,8 +9,8 @@
 int main(void)
 {
 char mych;
-for (mych = 'a'; mychar <= 'z'; mychar++)
-putchar(mychar);
+for (mych = 'a'; mych <= 'z'; mych++)
+putchar(mych);
 putchar('\n');
 return (0);
 }
