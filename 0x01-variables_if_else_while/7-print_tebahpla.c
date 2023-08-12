@@ -8,10 +8,12 @@
 */
 int main(void)
 {
-	char mlml;
+	char mych;
 
-	for (mlml = 'z'; mlml >= 'a'; mlml--)
-		putchar(mlml);
-		putchar('\n');
+	for (mych = 'z'; mych >= 'a'; mych--)
+	putchar(mych);
+
+	putchar('\n');
+
 	return (0);
 }
