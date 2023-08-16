@@ -4,7 +4,7 @@
 * print_remaining_days - calculates th remaining according to leap years
 * @month: the month
 * @day: the day
-* @year: the year 
+* @year: the year
 * Return: none
 */
 void print_remaining_days(int month, int day, int year)
