@@ -2,7 +2,7 @@
 /**
 *print_times_table - output is aparameter organized table
 *@n: detecting a parameter
-*Return: none 
+*Return: none
 */
 void print_times_table(int n)
 {
