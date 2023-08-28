@@ -6,13 +6,13 @@ nclude "holberton.h"
  **@n:  value
  ** Return: char with result of memset
  **/
-char *_memset(char *s, char b, unsigned int n)
+char *_memset(char *k, char v, unsigned int a)
 {
 	unsigned int i;
 	
-	for (i = 0; i < n; i++)
+	for (i = 0; i < a; i++)
 					{
-								s[i] = b;
+								k[i] = v;
 									}
-				return (s);
+				return (k);
 }
