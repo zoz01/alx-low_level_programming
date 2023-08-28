@@ -1,18 +1,22 @@
-nclude "holberton.h"
+
+#include <unistd.h>
+#include "holberton.h"
+
 /**
- ** _memset - fills memory with constant byte
- **@s: st value
- **@b: d value
- **@n:  value
- ** Return: char with result of memset
- **/
-char *_memset(char *k, char v, unsigned int a)
+ *  * _memset - fills memory with a constant byte
+ *   * @s: pointer to the memory area
+ *    * @b: the constant byte to fill the memory with
+ *     * @n: the number of bytes to fill
+ *      * Return: a pointer to the filled memory area
+ *       **/
+char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int i;
-	
-	for (i = 0; i < a; i++)
-					{
-								k[i] = v;
-									}
-				return (k);
+	    unsigned int i;
+	        
+	        for (i = 0; i < n; i++)
+			    {
+				            s[i] = b;
+					        }
+		    
+		    return s;
 }
