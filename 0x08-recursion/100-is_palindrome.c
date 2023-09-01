@@ -1,4 +1,4 @@
-nclude "holberton.h"
+#include "holberton.h"
 
 /**
 *palind2 - get length a
@@ -38,6 +38,6 @@ return (palind3(a + 1, l - 2));
 int is_palindrome(char *s)
 {
 int l;
-l = palind2(s, 0);
+l = palind3(s, 0);
 return (palind3(s, l));
 }
