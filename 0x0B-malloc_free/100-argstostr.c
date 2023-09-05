@@ -35,10 +35,10 @@ char *argstostr(int ac, char **av)
 	{
 		for (u = 0; av[n][u] != '\0'; u++)
 		{
-			pt[k] = av[n][u];
+			pt[c] = av[n][u];
 			c++;
 		}
-		pt[k] = '\n';
+		pt[c] = '\n';
 		c++;
 	}
 	pt[c] = '\0';
