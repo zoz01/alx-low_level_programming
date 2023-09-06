@@ -3,62 +3,62 @@
 #include <stdlib.h>
 
 /**
-* strtoww- the cons of all the args
+* strtov- the cons of all the args
 *@str: this is a str
 *@av: this is an arg
-* Return: ppntr o neww
+* Return: ppntr o nev
 */
 char **strtow(char *str)
 {
-        int ii, ww, jj, kk, count, mm, wooordff;
+        int s, v, c, t, count, q, wordt;
         char **pp;
         char *xx;
 
-        ww= 0;
-        jj = 0;
-        ii= 0;
+        v= 0;
+        c = 0;
+        s= 0;
         count = 0;
         if (*str == '\0' || str == NULL)
                 return (NULL);
-        for (ii= 0; str[ii] != '\0'; ii++)
+        for (s= 0; str[s] != '\0'; i++)
         {
-                if (str[ii] == ' ' && (str[ii+ 1] != ' ' || str[ii+ 1] == '\0'))
-                        ww++;
+                if (str[s] == ' ' && (str[s+ 1] != ' ' || str[s+ 1] == '\0'))
+                        v++;
         }
-        pp = (char **)malloc((ww+ 1) * sizeof(char *));
+        pp = (char **)malloc((v+ 1) * sizeof(char *));
         if (pp == NULL)
                 return (NULL);
-        for (wooordff = 0; str[wooordff] && jj <= ww; wooordff++)
+        for (wordt = 0; str[wordt] && c <= v; wordt++)
         {
                 count = 0;
-                if (str[wooordff] != ' ')
+                if (str[wordt] != ' ')
                 {
-                        for (ii= wooordff ; str[ii] != '\0'; ii++)
+                        for (s= wordt ; str[s] != '\0'; s++)
                         {
-                                if (str[ii] == ' ')
+                                if (str[s] == ' ')
                                         break;
                                 count++;
                         }
-                        *(pp + jj) = (char *)malloc((count + 1) * sizeof(char));
-                        if (*(pp + jj) == NULL)
+                        *(pp + c) = (char *)malloc((count + 1) * sizeof(char));
+                        if (*(pp + c) == NULL)
                         {
-                                for (kk = 0; kk <= jj; kk++)
+                                for (t = 0; t <= c; t++)
                                 {
-                                        xx = pp[kk];
+                                        xx = pp[t];
                                         free(xx);
                                 }
                                 free(pp);
                                 return (NULL);
                         }
-                        for (mm = 0; wooordff < ii; wooordff++)
+                        for (q = 0; wordt < s; wordt++)
                         {
-                                pp[jj][mm] = str[wooordff];
-                                mm++;
+                                pp[c][q] = str[wordt];
+                                q++;
                         }
-                        pp[jj][mm] = '\0';
-                        jj++;
+                        pp[c][q] = '\0';
+                        c++;
                 }
         }
-        pp[jj] = NULL;
+        pp[c] = NULL;
         return (pp);
 }
