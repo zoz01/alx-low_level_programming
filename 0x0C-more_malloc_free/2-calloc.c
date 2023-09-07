@@ -9,14 +9,14 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 char *block;
-unsigned int i;
+unsigned int o;
 if (nmemb == 0 || size == 0)
 return (NULL);
 block = malloc(nmemb * size);
 if (block != NULL)
 {
-for (i = 0; i < (nmemb * size); i++)
-block[i] = 0;
+for (o = 0; o < (nmemb * size); o++)
+block[o] = 0;
 return (block);
 }
 else
