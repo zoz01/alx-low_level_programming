@@ -12,7 +12,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *concat;
-	unsigned int loo = m, indax;
+	unsigned int loo = n, indax;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -33,7 +33,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (indax = 0; s1[indax]; indax++)
 		concat[loo++] = s1[indax];
 
-	for (indax = 0; s2[indax] && indax < m; indax++)
+	for (indax = 0; s2[indax] && indax < n; indax++)
 		concat[loo++] = s2[indax];
 
 	concat[loo] = '\0';
