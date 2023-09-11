@@ -7,7 +7,7 @@
 * @name: the dog name
 * @age: the dog age
 * @owner: the name of the owner
-*
+* @d: pntr to the dog
 * Description: it will say oofffff as a dog
 */
 
