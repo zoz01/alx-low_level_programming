@@ -1,4 +1,4 @@
-#if !defined(DOG_H)
+#ifndef DOG_H
 #define DOG_H
 
 /**
@@ -6,13 +6,14 @@
 * @name: the dog name
 * @age: the dog age
 * @owner: the name of the owner
+*
 * Description: it will say oofffff as a dog
 */
 
 struct dog
 {
-    char *name ;
-    float age  ;
+    char *name;
+    float age;
     char *owner;
 };
 
