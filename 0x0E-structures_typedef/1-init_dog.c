@@ -8,7 +8,7 @@
 * @age: the dog age
 * @owner: the name of the owner
 * @d: pntr to the dog
-* Description: it will say oofffff as a dog
+* return: voooooid
 */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
