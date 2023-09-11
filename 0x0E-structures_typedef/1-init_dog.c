@@ -1,4 +1,6 @@
 #include "dog.h"
+#include <stdlib.h>
+
 
 /**
 * struct dog - a sent said by a dog
