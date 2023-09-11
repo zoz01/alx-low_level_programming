@@ -3,7 +3,7 @@
 
 
 /**
-* struct dog - a sent said by a dog
+* init_dog - the struct s inted w it
 * @name: the dog name
 * @age: the dog age
 * @owner: the name of the owner
