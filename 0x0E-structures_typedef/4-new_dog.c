@@ -6,29 +6,29 @@
  * @name: name of the d2
  * @age: age of the d2
  * @owner: name of the owner2
- * Return: p
+ * Return: v
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *p;
+	dog_t *v;
 
-	p = malloc(sizeof(dog_t));
-	if (p == NULL)
+	v = malloc(sizeof(dog_t));
+	if (v == NULL)
 		return (NULL);
 	if (name == NULL)
 	{
-		free(p);
+		free(v);
 		free(owner);
 		return (NULL);
 	}
 	if (owner == NULL)
 	{
-		free(p);
+		free(v);
 		free(name);
 		return (NULL);
 	}
-	p->name = name;
-	p->age = age;
-	p->owner = owner;
-	return (p);
+	v->name = name;
+	v->age = age;
+	v->owner = owner;
+	return (v);
 }
