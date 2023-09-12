@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
-*main - the p where we 
+*main-the p where we
 *
 *Return: will be 0
 */
