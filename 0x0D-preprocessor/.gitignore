@@ -1,7 +1,0 @@
-# for igboring the unnecces
-
-*
-!.gitignore
-!README.md
-!*.c
-!*.h
