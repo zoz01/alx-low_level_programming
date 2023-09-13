@@ -5,7 +5,7 @@
 #include <stdlib.h>
 
 /**
-*struct op -do the progg
+*struct op-do the progg
 *@op:op ra tor
 *@f: wasted func
 */

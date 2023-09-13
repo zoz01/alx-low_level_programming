@@ -4,7 +4,8 @@
 /**
 * get_op_func - do the progg
 * @s:th emath do be done
-* Return: basicly the progg*/
+* Return: basicly the progg
+*/
 
 int (*get_op_func(char *s))(int, int)
 {
