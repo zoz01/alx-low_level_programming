@@ -1,22 +1,28 @@
 #include "lists.h"
 /**
- * print_listint - the tsxet wil br pribtde
- * @h: the heead to be
- * Return: nodes num
+ * print_list - the start of the all
+ * @h: headersfil esf or
+ * Return: some thi to be
  */
 
-size_t print_listint (const listint_t *h)
+size_t print_list(const list_t *h)
 {
-const listint_t *tmp;
-size_t count;
+size_t n = 0;
 
-tmp = h;
-count = 0;
-while (tmp != NULL)
+while (h != NULL)
 {
-printf("%d\n", tmp->n);
-count++;
-tmp = tmp->next;
+if (h->str == NULL)
+{
+printf("[0] %p\n", h->str);
+h = h->next;
+n++;
 }
-return (count);
+else
+{
+printf("[%d] %s\n", h->len, h->str);
+h = h->next;
+n++;
+}
+}
+return (n);
 }
