@@ -1,9 +1,9 @@
 #include "lists.h"
 
 /**
- * list_len - entry point
- *	@h: get list
- * Return: quantity nodes
+ * list_len - dgfkg fkjg
+ *	@h: gfd gfb djk
+ * Return: fidh dsifj lnkdf
  */
 size_t list_len(const list_t *h)
 {

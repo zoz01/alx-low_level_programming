@@ -1,8 +1,8 @@
 #include "lists.h"
 /**
- * print_list - entry point
- * @h: list
- * Return: Alway number of nodes
+ * print_list - the poin dui
+ * @h: dfh dlu
+ * Return: doifpo sioufm idf iff
  */
 size_t print_list(const list_t *h)
 {

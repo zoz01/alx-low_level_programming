@@ -1,10 +1,10 @@
 #include "lists.h"
 
 /**
- * add_node_end - entry oint
- * @head:	list nodes
- * @str:	string entry
- * Return:	new_node into list
+ * add_node_end - yut tghtr 6ty
+ * @head:	rty gtyhr tyh
+ * @str:	tyrty trhy tryh
+ * Return:	try yth uy yth
  */
 
 list_t *add_node_end(list_t **head, const char *str)

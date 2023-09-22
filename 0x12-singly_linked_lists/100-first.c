@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_before - void function
+ * print_before - etg tyhb yuh6
  */
 void print_before(void)
 {

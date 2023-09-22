@@ -1,9 +1,9 @@
 #include "lists.h"
 /**
- * add_node - entry point
- * @head: list entry
- * @str: entry name for list
- * Return: name list fill.
+ * add_node - gd dty ytrg gyht kij
+ * @head: ty ty ghy tjhg
+ * @str: tr kiu oi fty johj
+ * Return: fhty ytiuj drt uih
  */
 list_t *add_node(list_t **head, const char *str)
 {

@@ -1,8 +1,8 @@
 #include "lists.h"
 
 /**
- * free_list - entry point
- * @head: entry list
+ * free_list - thbtes sf teg
+ * @head: fgd tfrgb tyh
 */
 void free_list(list_t *head)
 {
