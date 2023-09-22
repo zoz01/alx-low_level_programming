@@ -1,11 +1,11 @@
 #include "lists.h"
 /**
- * print_them - the tsxet wil br pribtde
+ * print_listint - the tsxet wil br pribtde
  * @h: the heead to be
  * Return: nodes num
  */
 
-size_t print_them (const listint_t *h)
+size_t print_listint (const listint_t *h)
 {
 const listint_t *tmp;
 size_t count;
