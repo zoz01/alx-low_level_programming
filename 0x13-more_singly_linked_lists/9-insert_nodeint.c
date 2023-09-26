@@ -1,50 +1,64 @@
 #include "lists.h"
 
 /**
- * insert_nodeint_at_index - entry point
- * @head: a list
- * @idx: position of new node
- * @n: new date
- * Return: new node or NULL if it fails.
+ * insert_nodeint_at_index - returns the nth node of a linked list
+ * @head: pointer to the head of the list
+ * @idx: index of the node to be added
+ * @n: content of the new node
+ *
+ * Return: the address of the node
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	listint_t *new_n, *curr;
+	listint_t *new_node = NULL;
+	listint_t *previous_node = NULL;
 	unsigned int i = 0;
 
-	curr = (*head);
-
-	new_n = (listint_t *) malloc(sizeof(listint_t));
-	if (new_n == NULL)
-		return (NULL);
-	new_n->n = n;
-	if ((*head) != NULL)
+	new_node = malloc(sizeof(listint_t));
+	if (new_node == NULL || idx > listint_len(*head))
 	{
-		while (curr != NULL)
-		{
-			if (idx == 0)
-			{
-				new_n->next = curr;
-				curr = new_n;
-				(*head) = curr;
-				return ((*head));
-			}
-			else if (i == idx - 1)
-			{
-				new_n->next = curr->next;
-				curr->next = new_n;
-				return (curr);
-			}
-			else if (curr->next == NULL)
-			{
-				curr->next = new_n;
-				return (curr);
-			}
-			curr = curr->next;
-			i++;
-		}
+		free(new_node);
+		return (NULL);
 	}
-	new_n->next = NULL;
-	(*head) = new_n;
-	return ((*head));
+	new_node->n = n;
+	new_node->next = NULL;
+	while (head != NULL)
+	{
+		if (i == idx)
+		{
+			if (i == 0)
+			{
+				new_node->next = *head;
+				*head = new_node;
+				return (new_node);
+			}
+			new_node->next = previous_node->next;
+			previous_node->next = new_node;
+			return (new_node);
+		}
+		else if ((i + 1) == idx)
+			previous_node = *head;
+		head = &((*head)->next);
+		i++;
+	}
+	return (NULL);
+}
+
+/**
+ * listint_len - counts the number of nodes in a linked list
+ * @h: head of the list
+ *
+ * Return: the number of elements
+ */
+size_t listint_len(const listint_t *h)
+{
+	const listint_t *cursor = h;
+	size_t count = 0;
+
+	while (cursor != NULL)
+	{
+		count += 1;
+		cursor = cursor->next;
+	}
+	return (count);
 }
