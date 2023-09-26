@@ -1,28 +1,19 @@
 #include "lists.h"
-/**
-* print_list - the poin dui
-* @h: dfh dlu
-* Return: doifpo sioufm idf iff
-*/
 
+/**
+ * print_listint - riueynoen  oruihtio oirh
+ * @h: lrkgjlgnf lihrn  irtg uih
+ * Return:fg oiho oeihjr
+ */
 size_t print_listint(const listint_t *h)
 {
-size_t n = 0;
+size_t count = 0;
 
 while (h != NULL)
 {
-if (h->str == NULL)
-{
-printf("[0] %p\n", h->str);
+printf("%d\n", h->n);
 h = h->next;
-n++;
+count++;
 }
-else
-{
-printf("[%d] %s\n", h->len, h->str);
-h = h->next;
-n++;
-}
-}
-return (n);
+return (count);
 }

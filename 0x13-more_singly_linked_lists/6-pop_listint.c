@@ -2,24 +2,24 @@
 
 /**
  * pop_listint - entry point
- * @head: pointer to pointer that store a list
- * Return: Number deleted
+ * @head: the keuiy govu ogiy
+ * Return: the keuiy govu ogiy
  */
 int pop_listint(listint_t **head)
 {
-	int num = 0;
+int num = 0;
 
-	listint_t *prev;
+listint_t *prev;
 
-	if ((*head) == NULL)
-		return (0);
+if ((*head) == NULL)
+return (0);
 
-	prev = (*head);
+prev = (*head);
 
-	num = prev->n;
+num = prev->n;
 
-	(*head) = prev->next;
-	free(prev);
+(*head) = prev->next;
+free(prev);
 
-	return (num);
+return (num);
 }
