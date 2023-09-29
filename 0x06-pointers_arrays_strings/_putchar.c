@@ -1,11 +1,10 @@
 #include <unistd.h>
 
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * _putchar - tysd dfg dtry gfthy dyf
+ * @c: tysd dfg dtry gfthy dyf
+ * Return: tysd dfg dtry gfthy dyf
+ * On error, tysd dfg dtry gfthy dyf
  */
 int _putchar(char c)
 {
