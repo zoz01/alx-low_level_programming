@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * cap_string -tysd dfg dtry gfthy dyf
+ * cap_string - tysd dfg dtry gfthy dyf
  * @s:tysd dfg dtry gfthy dyf
  * Return: tysd dfg dtry gfthy dyf
  */
@@ -16,7 +16,7 @@ if (*(s + i) >= 'a' && *(s + i) <= 'z')
 {
 if (i == 0)
 {
-*(s + i) = *(s + i) - 32;
+*(s + i) = *(s + i) -32;
 }
 else
 {
@@ -24,7 +24,7 @@ for (j = 0; j <= 12; j++)
 {
 if (a[j] == *(s + i - 1))
 {
-*(s + i) = *(s + i) - 32;
+*(s + i) = *(s + i) -32;
 }
 }
 }
