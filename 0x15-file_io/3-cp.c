@@ -4,10 +4,10 @@
 #define SE STDERR_FILENO
 
 /**
- * main - create the copy bash script
- * @ac: argument count
- * @av: arguments as strings
- * Return: 0
+ * main - oidfu do8tu io;tgu dgu9
+ * @ac: oidfu do8tu io;tgu dgu9
+ * @av: oidfu do8tu io;tgu dgu9
+ * Return: 0,0
  */
 
 int main(int ac, char *av[])
